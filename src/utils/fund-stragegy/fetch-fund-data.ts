@@ -55,7 +55,7 @@ export const getFundData = async (fundCode: string | number, size: number | [any
   }
 
   // const path = `http://api.fund.eastmoney.com/f10/lsjz?fundCode=${fundCode}&pageIndex=${page}&pageSize=${Math.floor(pageSize)}&startDate=${startDate}&endDate=${endDate}&_=${Date.now()}`
-  const path = `http://fund.eastmoney.com/pingzhongdata/${fundCode}.js?v=${dateFormat(new Date(), 'yyyyMMddHHmmss')}`
+  const path = `https://fund.eastmoney.com/pingzhongdata/${fundCode}.js?v=${dateFormat(new Date(), 'yyyyMMddHHmmss')}`
   
   return new Promise((resolve) => {
     getJSONP(path, (resp) => {
