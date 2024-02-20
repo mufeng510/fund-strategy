@@ -4,7 +4,7 @@ import { IConfig } from 'umi-types';
 const config: IConfig =  {
   treeShaking: true,
   history: 'hash',
-  publicPath: '/fund/',
+  publicPath: '/',
   routes: [
     {
       path: '/',
